@@ -35,7 +35,35 @@ EOD;
 	 	}
  	}
 
+/*
+create table md (
+	id varchar(32),
+	name varchar(500),
+	categories varchar[],
+	lat float8,
+	lng float8,
+	ts timestamp without time zone,
+	checkins_count int,
+	geom geometry
+);
+create index md_gidx on md using gist(geom);
+
+create table g_md (
+	id varchar(32),
+	name varchar(500),
+	types varchar(500),
+	lat float8,
+	lng float8,
+	ts timestamp without time zone,
+	geom geometry
+);
+create index g_md_gidx on g_md using gist(geom);
 
 
+create table f_catsh (
+	id varchar(32),
+	name varchar(500)
+);
+*/
 
 ?>
